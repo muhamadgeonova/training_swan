@@ -69,3 +69,11 @@ mpirun ./swanrun -input SamuderaHindia_coba2.swn
 sbatch job.mpi
 
 7. Take a coffee break and wait for it to run.
+
+8. Download
+In mobaxterm, new tab
+cd /drives/d
+then type :
+scp -P 2022 tr02@182.16.251.41:/home/<user_name_tr_xx>/SWAN/swan4145/output_tc_fix.mat .
+
+Open in Matlab

@@ -6,9 +6,22 @@ cd SWAN
 wget https://swanmodel.sourceforge.io/download/zip/swan4145.tar.gz
 
 2. Unzip and install
+###extract
 tar -xvzf swan4145.tar.gz
 cd swan4145
+
+###make config
 make config
+
+###edit macros to add netcdf support
+gedit macros.inc
+
+change (line 14) :
+NETCDFROOT=..
+into (line 14) :
+NETCDFROOT = /opt/ohpc/pub/apps/netcdf-4.7.3
+
+###install using make
 make mpi
 
 SWAN is installed swan.exe is present. Type ls | grep swan.exe

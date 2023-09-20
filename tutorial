@@ -24,9 +24,14 @@ cp /mnt-storage1/TRAINING/data/swan_fgd/WindWorking_combined.wnd .
 4.a. Change the time so it will not be too long :
 gedit SamuderaHindia_coba2.swn
 
-Change this (Line 59) :
+Change this (Line 52)
+BLOCK 'COMPGRID' NOHEAD 'output_tc_fix.mat' LAYOUT 3 HSIG HSWELL DIR DEP XP YP WIND OUTput 20171201000000 1 HR
+and this (Line 59) :
 COMP NONST 20171101000000 1 HR 20171206000000
+
+
 Into :
+BLOCK 'COMPGRID' NOHEAD 'output_tc_fix.mat' LAYOUT 3 HSIG HSWELL DIR DEP XP YP WIND OUTput 20171101000000 1 HR
 COMP NONST 20171101000000 1 HR 20171108000000
 
 5. Copy job.mpi

@@ -21,6 +21,14 @@ cp /mnt-storage1/TRAINING/data/swan_fgd/SamuderaHindia_coba2.swn .
 cp /mnt-storage1/TRAINING/data/swan_fgd/batimetri_batnas.bot .
 cp /mnt-storage1/TRAINING/data/swan_fgd/WindWorking_combined.wnd .
 
+4.a. Change the time so it will not be too long :
+gedit SamuderaHindia_coba2.swn
+
+Change this (Line 59) :
+COMP NONST 20171101000000 1 HR 20171206000000
+Into :
+COMP NONST 20171101000000 1 HR 20171108000000
+
 5. Copy job.mpi
 cp /opt/ohpc/pub/examples/slurm/job.mpi .
 gedit job.mpi

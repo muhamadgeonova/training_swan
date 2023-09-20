@@ -10,6 +10,9 @@ wget https://swanmodel.sourceforge.io/download/zip/swan4145.tar.gz
 tar -xvzf swan4145.tar.gz
 cd swan4145
 
+
+## restore module
+ml restore coa_mod
 ###make config
 make config
 
